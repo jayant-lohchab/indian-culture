@@ -1,0 +1,55 @@
+.header {
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  /* Style the navigation menu */
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Style each navigation item */
+  .navList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navItem {
+    margin: 0 15px;
+    display: inline;
+  }
+  
+  /* Style the navigation links */
+  .navLink {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navLink:hover {
+    color: #f39c12;
+  }
+  
+  /* Add a subtle hover animation to nav items */
+  .navItem:hover .navLink {
+    transform: translateY(-2px);
+  }
+  
+  /* Apply a decorative underline on hover */
+  .navLink:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #f39c12;
+    transform: scaleX(0); /* Start with no width */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navItem:hover .navLink::after {
+    transform: scaleX(1); /* Expand width on hover */
+  }
